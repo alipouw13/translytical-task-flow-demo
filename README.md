@@ -42,8 +42,9 @@ function writes to. The moment the function commits, the next visual query reads
 | `sql/01-create-tables.sql` | Schema for the four demo tables |
 | `sql/02-seed-data.sql` | 20 employees, 30 reviews, 30 feedback rows, 295 ownership rows |
 | `user-data-function/` | The Python writeback function and its item definition |
-| `semantic-model/` | Semantic model in TMDL format (8 tables, DirectQuery) |
-| `report/` | Power BI report in PBIR format (2 pages, dark theme, data function button) |
+| `SentimentByProduct.SemanticModel/` | Semantic model in TMDL format (8 tables, DirectQuery) |
+| `SentimentByProduct.Report/` | Power BI report in PBIR format (2 pages, dark theme, data function button) |
+| `SentimentByProduct.pbip` | Project file — open this in Power BI Desktop |
 | `scripts/Set-Environment.ps1` | Stamps your own workspace/database IDs into the definitions |
 
 ## Prerequisites
@@ -82,13 +83,12 @@ decorator). Paste in `user-data-function/function_app.py` and publish.
 
 ### 3. Stamp in your identifiers
 
-The definitions ship with placeholders rather than hard-coded IDs. Collect your workspace ID, SQL
-database name/ID, and the user data function ID, then:
+The definitions ship with placeholders rather than hard-coded IDs. Collect the five values below,
+then run:
 
 ```powershell
 cd scripts
 ./Set-Environment.ps1 -WhatIf `
-    -WorkspaceName      'My Workspace' `
     -WorkspaceId        '<your workspace guid>' `
     -SqlServerFqdn      '<your server>.database.fabric.microsoft.com' `
     -SqlDatabaseName    '<db name>-<db guid>' `
@@ -96,22 +96,25 @@ cd scripts
     -UserDataFunctionId '<udf guid>'
 ```
 
-Drop `-WhatIf` to apply. The SQL server FQDN and database name are on the SQL database's
-**Settings → Connection strings** page.
+Drop `-WhatIf` to apply; it reports any placeholder it could not resolve.
 
 | Placeholder | Where to find it |
 | --- | --- |
 | `<WORKSPACE_ID>` | Workspace URL: `/groups/{id}` |
-| `<WORKSPACE_NAME>` | Workspace display name |
 | `<SQL_SERVER_FQDN>` | SQL database → Settings → Connection strings |
 | `<SQL_DATABASE_NAME>` | Same page — includes the `-{guid}` suffix |
 | `<SQL_DATABASE_ID>` | SQL database item URL |
 | `<USER_DATA_FUNCTION_ID>` | User data function item URL |
 
+You do **not** need a semantic model or report ID — the report references the model by relative
+path, so they bind to each other automatically.
+
 ### 4. Deploy the semantic model and report
 
-Publish `semantic-model/` and `report/` to your workspace. Any of these work:
+Open **`SentimentByProduct.pbip`** in Power BI Desktop and publish, or push the folders to Fabric
+directly. Any of these work:
 
+- **Power BI Desktop** — open the `.pbip`, then *Publish*
 - **Fabric Git integration** — point a workspace at your fork and sync
 - **`fabric-cli`** — `fab import` the folders
 - **Fabric REST API** — `POST /v1/workspaces/{id}/items/{id}/updateDefinition`
@@ -207,3 +210,4 @@ Artifact definitions were exported from a working Fabric workspace and sanitised
 database and item identifiers are placeholders. No credentials or connection secrets are stored in
 this repo; the semantic model authenticates through Fabric-managed credentials and the function
 connects through its Fabric connection alias.
+

@@ -9,7 +9,7 @@ Two pages, dark navy / teal theme, with the data function button that drives the
 
 ## The button
 
-`definition/pages/95eee6190be6f8d348af/visuals/25384b33804bc9d07bf9/visual.json`
+`SentimentByProduct.Report/definition/pages/95eee6190be6f8d348af/visuals/25384b33804bc9d07bf9/visual.json`
 
 Its action is stored under `visualContainerObjects.visualLink` and holds an explicit reference to a
 workspace and user data function. **It does not rebind automatically** when the report moves to a
@@ -34,3 +34,4 @@ Visual formatting objects are **not** schema-validated on upload. Setting a prop
 exist for that visual type is accepted by the API and then breaks the visual at render time (it
 appears as an error tile with a "See details" link). Only set properties that already exist on that
 visual, or copy the shape of an existing entry.
+
