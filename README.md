@@ -42,9 +42,9 @@ function writes to. The moment the function commits, the next visual query reads
 | `sql/01-create-tables.sql` | Schema for the four demo tables |
 | `sql/02-seed-data.sql` | 20 employees, 30 reviews, 30 feedback rows, 295 ownership rows |
 | `user-data-function/` | The Python writeback function and its item definition |
-| `SentimentByProduct.SemanticModel/` | Semantic model in TMDL format (8 tables, DirectQuery) |
-| `SentimentByProduct.Report/` | Power BI report in PBIR format (2 pages, dark theme, data function button) |
-| `SentimentByProduct.pbip` | Project file — open this in Power BI Desktop |
+| `report/SentimentByProduct.pbip` | Project file — open this in Power BI Desktop |
+| `report/SentimentByProduct.SemanticModel/` | Semantic model in TMDL format (8 tables, DirectQuery) |
+| `report/SentimentByProduct.Report/` | Power BI report in PBIR format (2 pages, dark theme, data function button) |
 | `scripts/Set-Environment.ps1` | Stamps your own workspace/database IDs into the definitions |
 
 ## Prerequisites
@@ -111,8 +111,8 @@ path, so they bind to each other automatically.
 
 ### 4. Deploy the semantic model and report
 
-Open **`SentimentByProduct.pbip`** in Power BI Desktop and publish, or push the folders to Fabric
-directly. Any of these work:
+Open **`report/SentimentByProduct.pbip`** in Power BI Desktop and publish, or push the folders to
+Fabric directly. Any of these work:
 
 - **Power BI Desktop** — open the `.pbip`, then *Publish*
 - **Fabric Git integration** — point a workspace at your fork and sync
@@ -146,6 +146,8 @@ new text with a fresh `updated_date`.
 ## The semantic model
 
 Eight DirectQuery tables in a star schema:
+
+![Semantic model relationships](docs/images/semantic-model-relationships.png)
 
 ```
 Products ──1:*── Product Reviews ──1:*── Product Review Feedback   (writeback target)

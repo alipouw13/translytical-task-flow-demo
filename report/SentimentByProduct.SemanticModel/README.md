@@ -3,6 +3,8 @@
 Eight tables, **DirectQuery** over the Fabric SQL database. DirectQuery is what makes the writeback
 appear instantly — switch to Import and the report shows stale data until the next refresh.
 
+![Semantic model relationships](../../docs/images/semantic-model-relationships.png)
+
 ## Relationships
 
 | From (many) | To (one) | Cross-filter |
@@ -43,3 +45,4 @@ Sql.Database("<SQL_SERVER_FQDN>,1433", "<SQL_DATABASE_NAME>")
 
 Run `scripts/Set-Environment.ps1` to substitute your own values, then set data source credentials in
 the semantic model settings after publishing.
+
