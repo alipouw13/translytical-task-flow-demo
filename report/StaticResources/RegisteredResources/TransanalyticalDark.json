@@ -1,0 +1,130 @@
+{
+  "name": "TransanalyticalDark",
+  "dataColors": [
+    "#FF7285",
+    "#F2C94C",
+    "#3EC9DB",
+    "#4DD0E1",
+    "#7FE3C8",
+    "#5AA9F0",
+    "#B79CFF",
+    "#9BB4D9"
+  ],
+  "background": "#0B1524",
+  "backgroundLight": "#16233C",
+  "backgroundNeutral": "#25395C",
+  "foreground": "#E8EEF7",
+  "foregroundNeutralSecondary": "#A9B7CC",
+  "foregroundNeutralTertiary": "#7C8CA6",
+  "tableAccent": "#3EC9DB",
+  "good": "#7FE3C8",
+  "neutral": "#F2C94C",
+  "bad": "#EB6F92",
+  "maximum": "#3EC9DB",
+  "minimum": "#1B2B48",
+  "textClasses": {
+    "label": {
+      "color": "#A9B7CC",
+      "fontSize": 9,
+      "fontFace": "Segoe UI"
+    },
+    "callout": {
+      "color": "#FFFFFF",
+      "fontSize": 26,
+      "fontFace": "Segoe UI Semibold"
+    },
+    "title": {
+      "color": "#FFFFFF",
+      "fontSize": 11,
+      "fontFace": "Segoe UI Semibold"
+    },
+    "header": {
+      "color": "#FFFFFF",
+      "fontSize": 10,
+      "fontFace": "Segoe UI Semibold"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "fontColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "fontSize": 11,
+            "alignment": "left"
+          }
+        ],
+        "legend": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": "#A9B7CC"
+              }
+            },
+            "fontSize": 9
+          }
+        ],
+        "categoryAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": "#A9B7CC"
+              }
+            },
+            "fontSize": 9,
+            "showAxisTitle": false
+          }
+        ],
+        "valueAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": "#A9B7CC"
+              }
+            },
+            "fontSize": 9,
+            "showAxisTitle": false,
+            "gridlineColor": {
+              "solid": {
+                "color": "#1E2E4A"
+              }
+            }
+          }
+        ],
+        "labels": [
+          {
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "fontSize": 9
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "cardVisual": {
+      "*": {
+        "border": [
+          {
+            "show": false
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ]
+      }
+    }
+  }
+}

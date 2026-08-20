@@ -1,0 +1,37 @@
+relationship c578c227-ed73-47f0-83c2-b01f78c722c4
+	fromColumn: Products.ProductModelID
+	toColumn: 'Product Model'.ProductModelID
+
+	annotation PBI_IsFromSource = FS
+
+relationship 7adf8a7f-9fe9-4c1c-93b5-00380a584c9a
+	fromColumn: 'Product Model Description'.ProductModelID
+	toColumn: 'Product Model'.ProductModelID
+
+	annotation PBI_IsFromSource = FS
+
+relationship c72379c6-707f-9316-c82f-b3bb04249efb
+	fromColumn: 'Assigned Products'.employee_ID
+	toColumn: Employees.employee_ID
+
+relationship 73ad4d86-cce3-9b50-c6a0-11ae0fd155d5
+	fromColumn: 'Product Review Feedback'.employee_ID
+	toColumn: Employees.employee_ID
+
+relationship 5ff5a37e-7ed5-0f33-8cd4-6ea860bf2fc9
+	fromColumn: 'Product Reviews'.ProductID
+	toColumn: Products.ProductID
+
+relationship 7aeeea79-c904-aad4-d1de-759f7411d070
+	fromColumn: 'Product Model Description'.ProductDescriptionID
+	toColumn: 'Product Description'.ProductDescriptionID
+
+relationship f9f1bdfc-8ac4-01b2-7d63-bc07928f2428
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'Product Review Feedback'.ReviewID
+	toColumn: 'Product Reviews'.ReviewID
+
+relationship 3a7c1e64-9d2b-4f18-b0c5-5e8a1d6f2c37
+	fromColumn: 'Assigned Products'.ProductID
+	toColumn: Products.ProductID
+

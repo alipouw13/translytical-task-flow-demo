@@ -1,0 +1,600 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "1.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "assigned products": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Assigned Products"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "assigned products.emp_assigned_pdct_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Assigned Products",
+			          "ConceptualProperty": "Emp_Assigned_Pdct_ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "assigned products.employee_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Assigned Products",
+			          "ConceptualProperty": "employee_ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "assigned products.productid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Assigned Products",
+			          "ConceptualProperty": "ProductID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "employees": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Employees"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "employees.employee_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Employees",
+			          "ConceptualProperty": "employee_ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "employees.firstname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Employees",
+			          "ConceptualProperty": "FirstName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "employees.lastname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Employees",
+			          "ConceptualProperty": "LastName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "employees.jobtitle": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Employees",
+			          "ConceptualProperty": "JobTitle"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product review feedback": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Review Feedback"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product review feedback.productid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Review Feedback",
+			          "ConceptualProperty": "ProductID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product review feedback.reviewid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Review Feedback",
+			          "ConceptualProperty": "ReviewID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product review feedback.employee_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Review Feedback",
+			          "ConceptualProperty": "employee_ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product review feedback.employee_comments": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Review Feedback",
+			          "ConceptualProperty": "employee_comments"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product review feedback.resolution": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Review Feedback",
+			          "ConceptualProperty": "resolution"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product review feedback.created_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Review Feedback",
+			          "ConceptualProperty": "created_date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product review feedback.updated_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Review Feedback",
+			          "ConceptualProperty": "updated_date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product review feedback.responded": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Review Feedback",
+			          "ConceptualProperty": "Responded"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product reviews": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Reviews"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product reviews.reviewid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Reviews",
+			          "ConceptualProperty": "ReviewID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product reviews.productid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Reviews",
+			          "ConceptualProperty": "ProductID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product reviews.reviewtext": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Reviews",
+			          "ConceptualProperty": "ReviewText"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product reviews.sentimentlabel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Reviews",
+			          "ConceptualProperty": "SentimentLabel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product reviews.createdat": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Reviews",
+			          "ConceptualProperty": "CreatedAt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product reviews.reviews": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Reviews",
+			          "ConceptualProperty": "Reviews"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "products": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "products.productid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products",
+			          "ConceptualProperty": "ProductID"
+			        }
+			      },
+			      "Terms": [
+			        {
+			          "product label": {
+			            "Type": "Noun",
+			            "State": "Deleted",
+			            "LastModified": "2026-05-07T00:35:35.037Z"
+			          }
+			        }
+			      ]
+			    },
+			    "products.name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products",
+			          "ConceptualProperty": "Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "products.productnumber": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products",
+			          "ConceptualProperty": "ProductNumber"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "products.color": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products",
+			          "ConceptualProperty": "Color"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "products.standardcost": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products",
+			          "ConceptualProperty": "StandardCost"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "products.listprice": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products",
+			          "ConceptualProperty": "ListPrice"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "products.size": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products",
+			          "ConceptualProperty": "Size"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "products.weight": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products",
+			          "ConceptualProperty": "Weight"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "products.productcategoryid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products",
+			          "ConceptualProperty": "ProductCategoryID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "products.productmodelid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products",
+			          "ConceptualProperty": "ProductModelID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "products.sellstartdate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products",
+			          "ConceptualProperty": "SellStartDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "products.sellenddate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products",
+			          "ConceptualProperty": "SellEndDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "products.discontinueddate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products",
+			          "ConceptualProperty": "DiscontinuedDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "products.thumbnailphotofilename": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products",
+			          "ConceptualProperty": "ThumbnailPhotoFileName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "products.rowguid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products",
+			          "ConceptualProperty": "rowguid"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "products.modifieddate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products",
+			          "ConceptualProperty": "ModifiedDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "products.products": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Products",
+			          "ConceptualProperty": "Products"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product model": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Model"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product model.productmodelid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Model",
+			          "ConceptualProperty": "ProductModelID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product model.name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Model",
+			          "ConceptualProperty": "Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product model.rowguid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Model",
+			          "ConceptualProperty": "rowguid"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product model.modifieddate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Model",
+			          "ConceptualProperty": "ModifiedDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product model description": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Model Description"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product model description.productmodelid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Model Description",
+			          "ConceptualProperty": "ProductModelID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product model description.productdescriptionid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Model Description",
+			          "ConceptualProperty": "ProductDescriptionID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product model description.culture": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Model Description",
+			          "ConceptualProperty": "Culture"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product model description.rowguid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Model Description",
+			          "ConceptualProperty": "rowguid"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product model description.modifieddate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Model Description",
+			          "ConceptualProperty": "ModifiedDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product description": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Description"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product description.productdescriptionid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Description",
+			          "ConceptualProperty": "ProductDescriptionID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product description.description": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Description",
+			          "ConceptualProperty": "Description"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product description.rowguid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Description",
+			          "ConceptualProperty": "rowguid"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    },
+			    "product description.modifieddate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Product Description",
+			          "ConceptualProperty": "ModifiedDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": []
+			    }
+			  }
+			}
+		contentType: json
+

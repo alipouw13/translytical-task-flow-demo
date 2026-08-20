@@ -1,0 +1,12 @@
+# Build outputs / local tooling
+.venv/
+__pycache__/
+*.pyc
+
+# OS noise
+Thumbs.db
+.DS_Store
+
+# Local environment values - never commit real connection details
+**/local.settings.json
+*.env
